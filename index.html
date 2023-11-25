@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Title</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+
+<body>
+    <div class="container" style="margin-bottom: 500px">
+        <!-- bài 1:cho người dùng nhập vào 3 số nguyên, viết chương trình suất 3 số nguyên theo thứ tự tăng dần -->
+        <h3>bài 1:cho người dùng nhập vào 3 số nguyên, viết chương trình suất 3 số nguyên theo thứ tự tăng dần</h3>
+        <div class="form-group">
+            <p>Mời nhập giá trị thứ nhất</p>
+            <input class="form-control mb-2 w-25" id="a">
+            <p>Mời nhập giá trị thứ hai</p>
+            <input class="form-control mb-2 w-25" id="b">
+            <p>Mời nhập giá trị thứ ba</p>
+            <input class="form-control mb-2 w-25" id="c">
+            <button class="btn btn-success" id="arrange" onclick="arrange()">arrange</button>
+            <div id="ketqua1">
+                <div class="alert alert-success mt-2" id="output1"></div>
+            </div>
+        </div>
+        <!-- bài 2: viết chương trình chào hỏi  -->
+        <h3>bài 2: viết chương trình chào hỏi</h3>
+        <div class="form-group">
+            <label for="who">Ai đang sử dụng máy</label>
+            <select name="member" id="member">
+                <option value="B">Bố</option>
+                <option value="M">Mẹ</option>
+                <option value="A">Anh trai</option>
+                <option value="E">Em gái</option>
+            </select>
+            <button class="btn btn-success" id="use" onclick="chao_hoi()">Use</button>
+            <div id="ketqua2">
+                <div class="alert alert-success mt-2" id="output2"></div>
+            </div>
+        </div>
+        <!-- bài 3: viết chương trình suất ra có bao nhiêu số lẻ và bao nhiêu số chẵn -->
+        <h3>bài 3: viết chương trình suất ra có bao nhiêu số lẻ và bao nhiêu số chẵn</h3>
+        <div class="form-group">
+            <p>số thứ nhất</p>
+            <input class="form-control mt-2 w-25" id="d">
+            <p>số thứ hai</p>
+            <input class="form-control mt-2 w-25" id="e">
+            <p>số thứ ba</p>
+            <input class="form-control mt-2 w-25" id="f">
+            <button class="btn btn-success" id="odd_even" onclick="odd_even()">Submit</button>
+            <div id="ketqua3">
+                <div class="alert alert-success mt-2" id="output3"></div>
+            </div>
+        </div>
+        <!-- bài 4: nhập 3 cạnh của tam giác và cho biết đó là tam giác gì  -->
+        <h3>bài 4: nhập 3 cạnh của tam giác và cho biết đó là tam giác gì</h3>
+        <div class="form-group">
+            <p>Nhập độ dài cạnh thứ nhất</p>
+            <input class="form-control mt-2 w-25" id="g">
+            <p>Nhập độ dài cạnh thứ hai</p>
+            <input class="form-control mt-2 w-25" id="h">
+            <p>Nhập độ dài cạnh thứ ba</p>
+            <input class="form-control mt-2 w-25" id="i">
+            <button class="btn btn-success mt-2" id="triangle" onclick="triangle()">Submit</button>
+            <div id="ketqua4">
+                <div class="alert alert-success mt-2" id="output4"></div>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+    <script src="./js/index.js"></script>
+</body>
+
+</html>
